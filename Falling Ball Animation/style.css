@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation-name: ball;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    /* animation-timing-function: ease-out; */
+    animation-iteration-count: infinite;
+    border-bottom: 3px solid white;
+}
+
+@keyframes ball {
+        0%{
+            transform: translate(0) ;
+        }
+        25%{
+            
+            transform: translate(0, 50px) ;
+        }
+        50%{
+            transform: translate(0, 100px) ;
+        }
+        75%{
+            transform: translate(0, 150px) ;
+
+        }
+        100%{
+            transform: translate(0, 200px) ;
+
+        }
+}
