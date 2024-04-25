@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100px;
+    width: 100px;
+    /* background-color: rgb(255, 255, 255,0.2); */
+    background-color: hsl(50, 50%, 50%,0.1);
+    border-radius: 50%;
+    margin: 0 auto;
+
+    /* transition-duration: 2s; */
+    /* transition-timing-function: ease-in; */
+    
+    animation-name: ball;
+    animation-duration: 0.5s;
+    /* animation-timing-function: ease-in; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ball {
+
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(150px);
+
+    }
+    75%{
+        transform: translateY(200px);
+
+    }
+    100%{
+        transform: translateY(250px);
+
+    }
+    
+}
+
+
+
+
+
+section{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+
+    /* transform: translateX(200px); */
+
+    /* animation: square 2s linear 0s infinite ; */
+    animation-name: square;
+    animation-duration: 2s;
+    
+}
+
+@keyframes square {
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translateX(400px);
+    }
+    50%{
+        transform: translate(400px,400px);
+    }
+    75%{
+        transform: translate(0,400px);
+    }
+    100%{
+        transform: translate(0px);
+
+        
+    }
+
+    
+}
+
+
